@@ -111,6 +111,9 @@ def parse_file( fname, edges, transform, screen, color ):
         elif line == 'apply':
             matrix_mult( transform, edges )
 
+        elif line == "clear":
+            edges = []
+
         elif line == 'display' or line == 'save':
             clear_screen(screen)
             draw_lines(edges, screen, color)

@@ -3,17 +3,36 @@ from matrix import *
 from math import *
 
 def add_box( points, x, y, z, width, height, depth ):
-    pass
-
+    x0 = x
+    y0 = y
+    z0 = z
+    
+    for i in range(4):
+        if i == 1:
+            x0 = x + width
+            y0 = y - height
+            
+        add_edge( points, x0, y0, z0, x + width, y, z )
+        add_edge( points, x0, y0, z0, x, y - height, z )
+        add_edge( points, x0, y0, z0, x, y, z - depth )
+        
+    add_edge( points, x + width, y, z, x + width, y - height, z )
+    add_edge( points, x, y - height, z, x + width, y - height, z )
+    add_edge( points, x + width, y - height, z - depth, x + width, y - height, z )
+    
 def add_sphere( points, cx, cy, cz, r, step ):
     pass
+
 def generate_sphere( points, cx, cy, cz, r, step ):
     pass
 
 def add_torus( points, cx, cy, cz, r0, r1, step ):
     pass
+
 def generate_torus( points, cx, cy, cz, r0, r1, step ):
     pass
+
+
 
 def add_circle( points, cx, cy, cz, r, step ):
     x0 = r + cx
