@@ -24,13 +24,32 @@ def add_sphere( points, cx, cy, cz, r, step ):
     pass
 
 def generate_sphere( points, cx, cy, cz, r, step ):
-    pass
+    rotation = 0
+    while rotation <= (1 + step/2):
+        circle = 0
+        while circle <= (1 + step/2):
+    	       x = r * math.cos(circle * math.pi) + cx
+	           y = r * math.sin(circle * math.pi) * math.cos(rotation * 2 * math.pi) + cy
+	           z = r * math.sin(circle * math.pi) * math.sin(rotation * 2 * math.pi) + cz
+               circle += step
+
+        rotation += step
+
 
 def add_torus( points, cx, cy, cz, r0, r1, step ):
     pass
 
 def generate_torus( points, cx, cy, cz, r0, r1, step ):
-    pass
+    rotation = 0
+    while rotation <= (1 + step/2):
+        circle = 0
+        while circle <= (1 + step/2):
+    	       x = math.cos(rotation * 2 * math.pi) * (r0 * math.cos(circle * 2 * math.pi) + r1) + cx
+	           y = r0 * math.sin(circle * 2 * math.pi) + cy
+	           z = -math.sin(rotation * 2 * math.pi) * (r0 * math.cos(circle * 2 * math.pi) + r1) + cz
+               circle += step
+
+        rotation += step
 
 
 
