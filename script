@@ -9,8 +9,7 @@ y 20
 move
 150 200 0
 apply
-save
-box.png
+display
 clear
 sphere
 0 0 0 200
@@ -20,8 +19,7 @@ y 90
 move
 250 250 0
 apply
-save
-sphere.
+display
 ident
 move
 -250 -250 0
