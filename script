@@ -23,7 +23,7 @@ move
 100 -280 0
 apply
 box
--86 -70 0 340 340 340
+-86 -206 10 340 200 300
 sphere
 176 -340 0 40
 sphere
@@ -38,7 +38,7 @@ x 10
 rotate
 y 10
 move
-200 420 0
+200 530 0
 apply
 display
 save
