@@ -86,7 +86,7 @@ def parse_file( fname, edges, transform, screen, color ):
             #print 'sphere\t' + line + ": " + str(args)
             add_sphere(edges,
                       float(args[0]), float(args[1]), float(args[2]),
-                      float(args[3]), 0.04)
+                      float(args[3]), 0.02)
 
         elif line == "torus":
             #print 'torus\t' + line + ": " + str(args)
