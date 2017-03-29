@@ -1,7 +1,31 @@
+torus
+60 -100 20 12 40
+ident
+rotate
+z 40
+rotate
+y 100
+rotate
+x 10
+move
+-30 -80 0
+apply
+torus
+40 -240 -30 12 40
+ident
+rotate
+z 40
+rotate
+y 80
+rotate
+x 20
+move
+100 -280 0
+apply
 box
 -86 -70 0 340 340 340
 sphere
-200 -340 0 40
+176 -340 0 40
 sphere
 -90 -340 0 40
 sphere
@@ -17,3 +41,5 @@ move
 200 420 0
 apply
 display
+save
+pic.png
