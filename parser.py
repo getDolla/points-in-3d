@@ -92,7 +92,7 @@ def parse_file( fname, edges, transform, screen, color ):
             #print 'torus\t' + line + ": " + str(args)
             add_torus(edges,
                       float(args[0]), float(args[1]), float(args[2]),
-                      float(args[3]), float(args[4]), 0.04)
+                      float(args[3]), float(args[4]), 0.01)
 
         elif line == 'line':
             #print 'LINE\t' + str(args)
